@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#eaeaea"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="apliksi.apikuan.Kebutuhan_gizi">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:id="@+id/tv">
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:text="@string/keburuhan"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/tv"
+                android:id="@+id/linearPanduan"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+
+                    android:text="Pada umur 1 bulan, bayi bisa"
+                    />
+
+
+
+                <CheckBox
+                    android:id="@+id/checkBoxa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Menatap ke ibu"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mengeluarkan suara o..oo"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBoc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tersenyum"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBoxed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Menggerakkan tangan dan kaki"
+                    />
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    android:text="Pada umur 3 bulan, bayi bisa:"
+                    />
+
+                <CheckBox
+                    android:id="@+id/checkBoxd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mengangkat kepala tegak ketika tengkurap"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBoxf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tertawa"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBoxg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Menggerakkan kepala kanan dan kiri"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBoxh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Membalas tersenyum ketika diajak bicara / tersenyum"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBoxi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CheckBox"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBoxj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mengoceh spontan atau bereaksi dengan mengoceh"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@drawable/button_bg_transparent2"
+                    android:text="Simpan"
+                    android:textColor="#fff"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true" />
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

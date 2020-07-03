@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Apikuan</string>
+
+    <string name="name">Contoh Spinner </string>
+    <string-array name="android_layout_arrays">
+        <item>Pilih Jenis Vaksin</item>
+        <item>HB-O</item>
+        <item>Polio 1</item>
+        <item>DPT-HB-Hib 1</item>
+        <item>Polio 2</item>
+        <item>DPT-HB-Hib 2</item>
+        <item>Polio 3</item>
+        <item>DPT-HB-Hib 3</item>
+        <item>Polio 4</item>
+        <item>IPV</item>
+        <item>Campak</item>
+        <item>DPT-HB-Hib Lanjutan</item>
+        <item>Campak Lanjutan</item>
+    </string-array>
+
+
+    <string name="keburuhan">Pemenuhan kebutuhan gizi dan perkembangan anak umur 0–3 bulan</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_navigasi_derawer">Apikuan</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+</resources>

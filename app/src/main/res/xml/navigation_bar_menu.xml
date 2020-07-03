@@ -1,0 +1,27 @@
+<tabs>
+    <tab
+        id="@+id/tab_home"
+        icon="@drawable/ic_home"
+        title="Home"
+        activeColor="@color/colormenu"
+        />
+    <tab
+        id="@+id/tab_catatan"
+        icon="@drawable/ic_catatan"
+        title="Note"
+        activeColor="@color/colormenu" />
+    <tab
+        id="@+id/tab_buku"
+        icon="@drawable/ic_book_black_24px"
+        title="Edukasi"
+        activeColor="@color/colormenu" />
+
+    <tab
+        id="@+id/tab_profil"
+        icon="@drawable/ic_profil"
+        title="Profil"
+        activeColor="@color/colormenu"/>
+
+
+
+</tabs>

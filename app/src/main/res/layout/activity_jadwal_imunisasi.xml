@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="apliksi.apikuan.Catatan_imunisasi"
+    android:background="#eaeaea">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bb_height"
+     >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:id="@+id/linearLayout">
+
+
+            <Button
+                android:id="@+id/btn_datePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Atur Tanggal"
+                android:background="@drawable/button_bg_transparent3"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Atur Waktu"
+                android:id="@+id/btn_timePicker"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_bg_transparent3"/>
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#a4a3a3"
+            android:textAlignment="center"
+            android:entries="@array/android_layout_arrays"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:padding="5dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:hint="Vaksin Lainnya"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/l_vaksin"
+            />
+
+        <EditText
+            android:layout_width="250dp"
+            android:hint="Catatan"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l_vaksin"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/text_jadwal"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_jadwal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:text="Simpan"
+            android:textAllCaps="false"
+            android:id="@+id/text_simpan"
+            android:background="@drawable/button_bg_transparent2"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_simpan"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="keterangan"
+                android:id="@+id/keterangan"
+                android:background="@drawable/button_bg_transparent2"
+                />
+
+            <Button
+                android:id="@+id/lihat_catatan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button_bg_transparent2"
+                android:gravity="center"
+                android:text="Lihat Catatan" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

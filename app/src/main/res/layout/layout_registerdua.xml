@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eaeaea"
+    tools:context="apliksi.apikuan.Register">
+
+    <TextView
+        android:id="@+id/apikuanreg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="BUAT AKUN"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textColor="#62c686"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_login"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logologin"
+        android:layout_below="@+id/apikuanreg1"/>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linierreg"
+        android:gravity="center"
+        android:layout_below="@+id/logologin">
+
+        <TextView
+            android:id="@+id/apikuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logologin"
+            android:layout_centerHorizontal="true"
+            android:text="Email"
+            android:textAlignment="center"
+
+            android:textSize="18dp" />
+
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:ems="11"
+            android:layout_height="40dp"
+            android:drawablePadding="5dp"
+            android:background="@drawable/button_bg_transparent"
+            android:drawableLeft="@drawable/ic_mail_"
+            android:layout_below="@+id/reg_nama"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/reg_email"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            />
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:ems="11"
+            android:layout_centerHorizontal="true"
+            android:drawablePadding="5dp"
+            android:id="@+id/reg_pass"
+            android:hint="Kata sandi"
+            android:background="@drawable/button_bg_transparent"
+            android:drawableLeft="@drawable/ic_lock"
+            android:layout_below="@+id/reg_email"
+
+            />
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:ems="11"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/reg_passdua"
+            android:hint="Konfirmasi Kata sandi"
+            android:drawableLeft="@drawable/ic_lock"
+            android:background="@drawable/button_bg_transparent"
+            android:drawablePadding="5dp"
+            android:layout_below="@id/reg_pass"
+            android:inputType="textPostalAddress"
+            />
+
+
+    </LinearLayout>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/linierreg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Daftar"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:background="@drawable/button_bg_transparent2"
+        android:id="@+id/reg_daftar"/>
+
+
+
+
+</RelativeLayout>
+

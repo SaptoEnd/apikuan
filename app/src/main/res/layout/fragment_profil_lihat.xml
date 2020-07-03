@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="apliksi.apikuan.ProfilFragmen"
+    android:id="@+id/profil_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/unnamed"
+            android:weightSum="2"
+            android:id="@+id/relativeLayout">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageView"
+                android:layout_width="110dp"
+                android:layout_height="113dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="0.16"
+                android:src="@drawable/ic_person"
+                app:civ_border_color="@android:color/white"
+                app:civ_border_width="4dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="30dp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="130dp"
+                android:layout_height="25dp"
+                android:layout_alignBottom="@+id/circleImageView"
+                android:layout_toEndOf="@+id/namamu"
+                android:layout_toRightOf="@+id/namamu"
+                android:background="@drawable/button_bg_transparent"
+                android:text="Edit Profile"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="29dp"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="21dp"
+                android:layout_toEndOf="@+id/circleImageView"
+                android:layout_toRightOf="@+id/circleImageView"
+                android:text="Nama"
+                android:textSize="28sp"
+                android:id="@+id/namamu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Umur"
+                android:textSize="22sp"
+                android:id="@+id/emailmu"
+                android:layout_below="@+id/namamu"
+                android:layout_alignLeft="@+id/namamu"
+                android:layout_alignStart="@+id/namamu" />
+
+
+        </RelativeLayout>
+    
+
+
+
+
+</RelativeLayout>

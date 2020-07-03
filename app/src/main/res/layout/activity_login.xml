@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eaeaea"
+    tools:context="apliksi.apikuan.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_user"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logologin"/>
+
+    <TextView
+        android:id="@+id/apikuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logologin"
+        android:layout_centerHorizontal="true"
+        android:text="APIKUAN"
+        android:textAlignment="center"
+        android:textColor="#62c686"
+        android:textSize="25dp" />
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linierlogin"
+        android:layout_below="@+id/apikuan"
+        android:gravity="center">
+
+
+        <EditText
+            android:layout_marginTop="20dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:drawableLeft="@drawable/ic_mail_"
+            android:drawablePadding="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_bg_transparent"
+            android:id="@+id/login_nama"
+            android:hint="Username atau Email"
+            />
+        <EditText
+            android:layout_below="@+id/login_nama"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:drawableLeft="@drawable/ic_lock"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/login_pass"
+            android:background="@drawable/button_bg_transparent"
+
+            android:hint="Password"
+            />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="150dp"
+            android:layout_below="@+id/login_pass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_height="40dp"
+            android:textColor="#fff"
+            android:background="@drawable/button_bg_transparent2"
+            android:text="Masuk"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_bantuan"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_below="@+id/btn_login"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="#eaeaea"
+            android:text="Lupa kata sandi?"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnlupa"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/login_pass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_height="30dp"
+            android:background="#eaeaea"
+            android:text="Butuh bantuan untuk masuk?"
+            android:textAllCaps="false" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/buatAkun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linierlogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:background="#eaeaea"
+        android:text="Belum memiliki akun? Buat Akun"
+        android:textAllCaps="false" />
+
+
+</RelativeLayout>
